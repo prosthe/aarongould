@@ -1,0 +1,300 @@
+get involved.html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Involved - PROSA | University of Liberia</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+
+<body>
+    <header class="header">
+        <!-- Same header as index.html -->
+    </header>
+
+    <!-- Get Involved Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Get Involved with PROSA</h1>
+            <p>Join our movement for educational reform and social justice. Multiple ways to contribute and make a
+                difference.</p>
+        </div>
+    </section>
+
+    <!-- Involvement Options -->
+    <section class="involvement-options">
+        <div class="container">
+            <div class="options-nav">
+                <button class="option-tab active" data-option="membership">Become a Member</button>
+                <button class="option-tab" data-option="volunteer">Volunteer</button>
+                <button class="option-tab" data-option="donate">Support Financially</button>
+                <button class="option-tab" data-option="partner">Partnership</button>
+            </div>
+
+            <!-- Membership Form -->
+            <div class="option-content active" id="membership">
+                <div class="form-container">
+                    <h2>Join PROSA Today</h2>
+                    <p class="form-description">Become an official member and help drive our campaigns for student
+                        rights and educational reform.</p>
+
+                    <form class="membership-form" id="membershipForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fullName">Full Name *</label>
+                                <input type="text" id="fullName" name="fullName" required
+                                    placeholder="Enter your full name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required
+                                    placeholder="your.email@example.com">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="university">University/Campus *</label>
+                                <select id="university" name="university" required>
+                                    <option value="">Select your campus</option>
+                                    <option value="ul-capital">University of Liberia - Capitol Hill</option>
+                                    <option value="ul-fendell">University of Liberia - Fendell</option>
+                                    <option value="ul-medical">University of Liberia - Medical</option>
+                                    <option value="other">Other University</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="studentId">Student ID</label>
+                                <input type="text" id="studentId" name="studentId" placeholder="Optional">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="major">Major/Program of Study</label>
+                            <input type="text" id="major" name="major"
+                                placeholder="e.g., Political Science, Engineering">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Areas of Interest *</label>
+                            <div class="checkbox-grid">
+                                <label class="checkbox">
+                                    <input type="checkbox" name="interests" value="advocacy">
+                                    <span>Advocacy & Campaigns</span>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox" name="interests" value="education">
+                                    <span>Education Programs</span>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox" name="interests" value="community">
+                                    <span>Community Outreach</span>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox" name="interests" value="sustainability">
+                                    <span>Sustainability Projects</span>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox" name="interests" value="media">
+                                    <span>Media & Communications</span>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox" name="interests" value="research">
+                                    <span>Research & Policy</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="motivation">Why do you want to join PROSA? *</label>
+                            <textarea id="motivation" name="motivation" required rows="4"
+                                placeholder="Share your motivation for joining our movement and what changes you hope to see..."></textarea>
+                        </div>
+
+                        <div class="form-group checkbox">
+                            <label>
+                                <input type="checkbox" name="agree" required>
+                                <span>I agree to receive communications from PROSA and abide by our code of conduct and
+                                    progressive values</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn-primary">Join PROSA Movement</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Donation Form -->
+            <div class="option-content" id="donate">
+                <div class="form-container">
+                    <h2>Support Our Work</h2>
+                    <p class="form-description">Your financial support helps us continue fighting for student rights and
+                        educational reform across Liberia.</p>
+
+                    <form class="donation-form" id="donationForm">
+                        <div class="donation-amounts">
+                            <h3>Select Donation Amount</h3>
+                            <div class="amount-options">
+                                <button type="button" class="amount-btn" data-amount="25">$25</button>
+                                <button type="button" class="amount-btn" data-amount="50">$50</button>
+                                <button type="button" class="amount-btn active" data-amount="100">$100</button>
+                                <div class="custom-amount">
+                                    <label>Other Amount: $</label>
+                                    <input type="number" id="customAmount" min="1" placeholder="Enter amount">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="donorName">Full Name *</label>
+                                <input type="text" id="donorName" name="donorName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="donorEmail">Email *</label>
+                                <input type="email" id="donorEmail" name="donorEmail" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="paymentMethod">Payment Method</label>
+                            <select id="paymentMethod" name="paymentMethod">
+                                <option value="mobile">Mobile Money</option>
+                                <option value="bank">Bank Transfer</option>
+                                <option value="cash">Cash</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="donation-impact">
+                            <h4>Your Impact:</h4>
+                            <ul>
+                                <li>💰 $25 funds educational materials for 10 students</li>
+                                <li>📚 $50 supports one community workshop</li>
+                                <li>🎤 $100 helps organize a campus awareness event</li>
+                                <li>🚌 $250 covers transportation for protest marches</li>
+                                <li>📢 $500 funds a major campaign for one month</li>
+                            </ul>
+                        </div>
+
+                        <button type="submit" class="btn-primary">Make a Difference</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Volunteer Section -->
+            <div class="option-content" id="volunteer">
+                <div class="form-container">
+                    <h2>Volunteer with PROSA</h2>
+                    <p class="form-description">Join our team of dedicated volunteers and contribute your skills to our
+                        various programs and campaigns.</p>
+
+                    <div class="volunteer-opportunities">
+                        <div class="opportunity-card">
+                            <h3>📢 Campaign Volunteer</h3>
+                            <p>Help organize and participate in our advocacy campaigns and protest movements.</p>
+                            <ul>
+                                <li>Event planning and coordination</li>
+                                <li>Community mobilization</li>
+                                <li>Public awareness activities</li>
+                            </ul>
+                        </div>
+
+                        <div class="opportunity-card">
+                            <h3>📚 Education Program Assistant</h3>
+                            <p>Support our academic programs and student mentorship initiatives.</p>
+                            <ul>
+                                <li>Tutoring and academic support</li>
+                                <li>Workshop facilitation</li>
+                                <li>Educational material development</li>
+                            </ul>
+                        </div>
+
+                        <div class="opportunity-card">
+                            <h3>💻 Media & Communications</h3>
+                            <p>Help spread our message through digital and traditional media channels.</p>
+                            <ul>
+                                <li>Social media management</li>
+                                <li>Content creation</li>
+                                <li>Press release writing</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <button class="btn-primary" onclick="location.href='contact.html'">Contact Volunteer
+                        Coordinator</button>
+                </div>
+            </div>
+
+            <!-- Partnership Section -->
+            <div class="option-content" id="partner">
+                <div class="form-container">
+                    <h2>Partner with PROSA</h2>
+                    <p class="form-description">Organizations, NGOs, and institutions can partner with us to amplify our
+                        impact and support student activism.</p>
+
+                    <div class="partnership-benefits">
+                        <h3>Partnership Benefits</h3>
+                        <div class="benefits-grid">
+                            <div class="benefit-card">
+                                <h4>📈 Extended Reach</h4>
+                                <p>Access to thousands of students across multiple university campuses</p>
+                            </div>
+                            <div class="benefit-card">
+                                <h4>🤝 Community Impact</h4>
+                                <p>Meaningful engagement with Liberia's future leaders and change-makers</p>
+                            </div>
+                            <div class="benefit-card">
+                                <h4>🎯 Targeted Programs</h4>
+                                <p>Collaborate on specific initiatives aligned with your organization's mission</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn-primary" onclick="location.href='contact.html'">Discuss Partnership</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="membership-benefits">
+        <div class="container">
+            <h2>Why Join PROSA?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon">🎓</div>
+                    <h3>Leadership Development</h3>
+                    <p>Gain valuable leadership experience through organizing campaigns and managing programs.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🤝</div>
+                    <h3>Networking Opportunities</h3>
+                    <p>Connect with like-minded students, activists, and professionals across Liberia.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">📚</div>
+                    <h3>Skill Building</h3>
+                    <p>Develop advocacy, communication, and organizational skills through hands-on experience.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🌍</div>
+                    <h3>Make Real Impact</h3>
+                    <p>Contribute to meaningful change in education policy and student rights in Liberia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/forms.js"></script>
+</body>
+
+</html>

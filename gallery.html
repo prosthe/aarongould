@@ -1,0 +1,96 @@
+gallery.html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - PROSA | University of Liberia</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+
+<body>
+    <header class="header">
+        <!-- Same header as index.html -->
+    </header>
+
+    <!-- Gallery Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>PROSA Gallery</h1>
+            <p>See our students in action - from protests to community service and educational programs</p>
+        </div>
+    </section>
+
+    <!-- Gallery Navigation -->
+    <section class="gallery-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Events</button>
+                <button class="filter-btn" data-filter="protests">Protests & Rallies</button>
+                <button class="filter-btn" data-filter="education">Education Programs</button>
+                <button class="filter-btn" data-filter="community">Community Service</button>
+                <button class="filter-btn" data-filter="events">Campus Events</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-grid-section">
+        <div class="container">
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Gallery items populated by JavaScript -->
+            </div>
+
+            <div class="gallery-highlights">
+                <h3>Featured Moments</h3>
+                <div class="featured-grid">
+                    <div class="featured-item">
+                        <img src="images/about-hero-7.jpg.jpeg" alt="Orange Fiber Campaign">
+                        <div class="featured-caption">
+                            <h4>Orange Fiber Launch</h4>
+                            <p>Launching our sustainable agriculture initiative</p>
+                        </div>
+                    </div>
+                    <div class="featured-item">
+                        <img src="images/about-hero-2.jpg.jpg" alt="Annual Report">
+                        <div class="featured-caption">
+                            <h4>Annual Review</h4>
+                            <p>Planning our strategic direction for the year</p>
+                        </div>
+                    </div>
+                    <div class="featured-item">
+                        <img src="images/about-hero-6.jpg.jpg" alt="Academic Support">
+                        <div class="featured-caption">
+                            <h4>Exam Support</h4>
+                            <p>Helping students succeed academically</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightboxClose">&times;</button>
+            <img src="" alt="" id="lightboxImage">
+            <div class="lightbox-caption">
+                <h3 id="lightboxTitle"></h3>
+                <p id="lightboxDescription"></p>
+                <span id="lightboxDate"></span>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+
+</html>

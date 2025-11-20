@@ -1,0 +1,161 @@
+news.html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Events - PROSA | University of Liberia</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+
+<body>
+    <header class="header">
+        <!-- Same header as index.html -->
+    </header>
+
+    <!-- News Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>PROSA News & Events</h1>
+            <p>Stay updated with our latest campaigns, achievements, and upcoming activities</p>
+        </div>
+    </section>
+
+    <!-- News Categories -->
+    <section class="news-categories">
+        <div class="container">
+            <div class="category-tabs">
+                <button class="category-tab active" data-category="all">All News</button>
+                <button class="category-tab" data-category="campaigns">Campaigns</button>
+                <button class="category-tab" data-category="events">Events</button>
+                <button class="category-tab" data-category="achievements">Achievements</button>
+                <button class="category-tab" data-category="press">Press Coverage</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Grid -->
+    <section class="news-grid-section">
+        <div class="container">
+            <div class="news-grid" id="newsGrid">
+                <div class="news-item urgent">
+                    <div class="news-badge">URGENT</div>
+                    <img src="images/about-hero-2.jpg.jpg" alt="Free Tuition Campaign">
+                    <div class="news-content">
+                        <span class="news-category">Campaigns</span>
+                        <h3>PASS FREE TUITION Campaign Intensifies</h3>
+                        <p>PROSA leads nationwide student mobilization against proposed tuition hikes at University of
+                            Liberia. Join our rally this Friday at Capitol Hill Campus.</p>
+                        <div class="news-meta">
+                            <span class="news-date">March 15, 2024</span>
+                            <span class="news-author">By PROSA Press Bureau</span>
+                        </div>
+                        <button class="btn-secondary">Read Full Statement</button>
+                    </div>
+                </div>
+
+                <div class="news-item">
+                    <div class="news-badge">NEW</div>
+                    <img src="images/about-hero-7.jpg.jpeg" alt="Orange Fiber">
+                    <div class="news-content">
+                        <span class="news-category">Events</span>
+                        <h3>Orange Fiber Initiative Launched</h3>
+                        <p>PROSA introduces sustainable agriculture program to promote environmental awareness and
+                            practical farming skills among students.</p>
+                        <div class="news-meta">
+                            <span class="news-date">March 10, 2024</span>
+                            <span class="news-author">By Environmental Committee</span>
+                        </div>
+                        <button class="btn-secondary">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="news-item">
+                    <img src="images/about-hero-6.jpg.jpg" alt="Academic Support">
+                    <div class="news-content">
+                        <span class="news-category">Achievements</span>
+                        <h3>Night Exam Support Program Success</h3>
+                        <p>Over 500 students benefited from our academic support program during midterm examinations.
+                            Program expands to more campuses.</p>
+                        <div class="news-meta">
+                            <span class="news-date">March 5, 2024</span>
+                            <span class="news-author">By Education Department</span>
+                        </div>
+                        <button class="btn-secondary">View Results</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Calendar -->
+    <section class="events-calendar">
+        <div class="container">
+            <h2>Upcoming Events</h2>
+            <div class="calendar-section">
+                <div class="calendar-header">
+                    <button class="calendar-nav" id="prevMonth">‹</button>
+                    <h3 id="currentMonth">March 2024</h3>
+                    <button class="calendar-nav" id="nextMonth">›</button>
+                </div>
+                <div class="calendar-grid" id="calendarGrid">
+                    <!-- Calendar populated by JavaScript -->
+                </div>
+            </div>
+
+            <div class="events-list">
+                <h3>Event Details</h3>
+                <div class="events-container" id="eventsList">
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span class="event-day">15</span>
+                            <span class="event-month">MAR</span>
+                        </div>
+                        <div class="event-details">
+                            <h4>Free Tuition Rally</h4>
+                            <p>📍 Capitol Hill Campus<br>⏰ 10:00 AM - 2:00 PM</p>
+                            <button class="btn-primary">RSVP</button>
+                        </div>
+                    </div>
+
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span class="event-day">20</span>
+                            <span class="event-month">MAR</span>
+                        </div>
+                        <div class="event-details">
+                            <h4>WINSPIRE Program Launch</h4>
+                            <p>📍 Student Union Building<br>⏰ 3:00 PM - 5:00 PM</p>
+                            <button class="btn-primary">Register</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-box">
+                <h2>Stay Informed</h2>
+                <p>Subscribe to our newsletter for weekly updates on PROSA activities and student rights issues.</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/news.js"></script>
+</body>
+
+</html>
